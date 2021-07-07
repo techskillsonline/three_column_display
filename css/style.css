@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+.title{
+    font-family: 'Big Shoulders Display', cursive;
+}
+.para{
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 30px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;  
+}
+
+.b{
+    border: 1px solid white;
+}
+.bg-color{
+    background-color: hsl(0, 0%, 95%);
+}
+.heading{
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 30px;
+}
+p{
+    margin-top: 30px;
+}
+.p-color{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 20px;
+}
+.main_content{
+    display: flex;
+    flex-direction: column;
+    /*margin: 50px 30px;*/
+   
+}
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+
+}
+.btn {
+    margin-top: 30px;
+    border: none;
+    padding: 13px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+
+.sedans .btn{
+    background-color:hsl(0, 0%, 95%);
+    color:hsl(31, 77%, 52%);
+}
+
+.suvs .btn{
+    background-color:hsl(0, 0%, 95%);
+    color:hsl(184, 100%, 22%);
+}
+
+.luxury .btn{
+    background-color:hsl(0, 0%, 95%);
+    color:hsl(179, 100%, 13%);
+}
+
+.sedans .btn:hover{
+    border: 3px solid hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    color:hsl(0, 0%, 95%);
+    padding: 10px 27px;
+
+}
+.suvs .btn:hover{
+    border: 3px solid hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    color:hsl(0, 0%, 95%);
+    padding: 10px 27px;
+
+}
+.luxury .btn:hover{
+    border: 3px solid hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    color:hsl(0, 0%, 95%);
+    padding: 10px 27px;
+
+}
+
+
+@media screen and (min-width:1440px) {
+
+    .main_content{
+        display: flex;
+        /*flex-direction: row;*/
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+           
+    }
+    .para{
+        margin-bottom: 60px;     
+        text-justify: inter-word;
+    }
+    .content{
+        width: 60%; 
+        display: flex;
+        
+            
+    }
+    .sedans{       
+
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;    
+    }
+    
+    .luxury{       
+       
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;    
+    
+    }
+    .sedans .btn,.suvs .btn,.luxury .btn{
+        margin-top: 20px;
+    }
+    
+}
+
+@media screen and (width:1440px) {
+    .suvs .btn,.luxury .btn{
+        margin-top: 44px;
+    }
+    
+}
+
