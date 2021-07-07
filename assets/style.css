@@ -70,8 +70,7 @@ body
 #divsedan
 {
     background-color: hsl(31, 77%, 52%);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    
 }
 
 #divsedan button
@@ -92,8 +91,7 @@ body
 #divluxury
 {
     background-color: hsl(179, 100%, 13%);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    
 }
 
 #divluxury button
@@ -114,4 +112,49 @@ body
 {
     display:flex;
     flex-direction: row;
+}
+
+
+@media screen and (min-width:1440px) 
+{
+
+    #content
+    {
+        flex-direction: row;
+    }
+
+    #divsedan
+    {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    #divluxury
+    {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+}
+
+@media screen and (max-width:375px) {
+
+    #content
+    {
+        flex-direction: column;
+    }
+
+    #divsedan
+    {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    #divluxury
+    {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
 }
